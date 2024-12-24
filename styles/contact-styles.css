@@ -1,0 +1,59 @@
+.contact-form {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact-form h2 {
+  color: white;
+  text-shadow: 2px 2px 6px black;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: brown;
+  max-width: 320px;
+  width: 100%;
+  padding: 20px;
+  align-self: center;
+}
+form label {
+  padding: 2px 0;
+  color: orange;
+}
+#name,
+#email,
+#subject,
+#message {
+  border: none;
+  border-radius: 6px;
+  margin: 0 0 12px 0;
+  background-color: bisque ;
+  min-height: 16px;
+  padding: 6px;
+  color: black;
+}
+#message {
+  max-height: 512px;
+  min-height: 32px;
+  resize: vertical;
+}
+.form-buttons {
+  display: flex;
+  justify-content: right;
+  margin-top: 6px;
+  gap: 6px;
+}
+#clear,
+#send {
+  border: none;
+  border-radius: 6px;
+  background-color: orange;
+  padding: 6px 16px;
+  color: #0d1017;
+}
