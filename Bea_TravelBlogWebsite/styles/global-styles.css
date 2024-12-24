@@ -1,0 +1,250 @@
+/* global styles */
+* {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Verdana;
+}
+
+header, header a, header button, header text {
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+}
+header img {
+  width: 22px;
+}
+
+footer, footer a, footer button, footer text {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+/* header styles */
+header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: brown;
+  padding: 0 32px;
+}
+header .left-panel {
+  display: flex;
+}
+header .left-panel a {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding: 0 12px;
+  transition: 0.3s;
+}
+header .left-panel a:hover {
+  background-color: orange;
+}
+header .right-panel {
+  display: flex;
+  align-items: center;
+}
+header .right-panel text {
+
+}
+header .social-links {
+  display: flex;
+  border-right: solid white 2px;
+  padding: 0 12px;
+  gap: 6px;
+}
+header .social-links a {
+  display: flex;
+  transition: 0.3s;
+}
+header .social-links a:hover {
+  transform: scale(1.15);
+}
+header .social-links a img {
+
+}
+header .subscribe-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-left: 8px;
+  background-color: brown;
+  height: 52px;
+  transition: 0.3s;
+  gap: 8px;
+}
+header .subscribe-btn:hover {
+  background-color: orange;
+}
+header .subscribe-btn img {
+
+}
+header .search-btn {
+  border: none;
+  background-color: brown;
+  height: 52px;
+  transition: 0.3s;
+}
+header .search-btn:hover {
+  background-color: orange;
+}
+header .search-btn img {
+
+}
+
+/* navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+  height: 82px;
+  overflow: hidden;
+  padding: 0px 32px;
+}
+nav .website-logo {
+  transform:translateY(-12px);
+  width: 220px;
+}
+nav .right-panel {
+  display: flex;
+  align-items: center;
+}
+nav .navigation-tabs {
+  display: flex;
+  margin-right: 12px;
+}
+nav .navigation-tabs button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: bisque;
+  height: 82px;
+  font-weight: 600;
+  transition: 0.3s;
+  gap: 8px;
+}
+nav .navigation-tabs button:hover {
+  background-color: orange;
+}
+nav .navigation-tabs img {
+  height: 12px;
+}
+nav .search-bar {
+  display: flex;
+  align-items: center;
+  border-left: black solid 2px;
+  padding: 12px;
+  gap: 8px;
+}
+nav .search-bar text {
+  font-weight: 600;
+}
+nav .search-bar input {
+  border: none;
+  border-radius: 50px;
+  height: 24px;
+  width: 152px;
+  padding: 6px 16px;
+  box-shadow: 2px 2px 2px  black;
+}
+
+/* footer styles */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222;
+  padding: 0 64px;
+}
+footer text {
+  color: #aaa;
+}
+footer .right-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  color: #333;
+}
+footer .right-panel h2 {
+  margin: 0 0 6px;
+  color: #aaa;
+}
+footer .right-panel a {
+  color: #aaa;
+}
+
+/* back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 12px;
+  background-color: orange;
+  height: 42px;
+  width: 42px;
+  box-shadow: 5px 5px black;
+}
+.back-to-top img {
+  width: 20px;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  header, nav, footer {
+    padding: 0 16px;
+  }
+  header .right-panel {
+    justify-content: end;
+  }
+
+  nav .website-logo {
+    width: 180px;
+  }
+
+  nav .search-bar input {
+    width: 120px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header, nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav .navigation-tabs {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  nav .search-bar {
+    flex-direction: column;
+    gap: 4px;
+    border-left: none;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+}
