@@ -1,19 +1,17 @@
-main {
-  background-image: url(images/hero-image.jpg);
-  background-position: center;
+.about {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 32px;
 }
+
 .about-cards {
   align-self: center;
   display: flex;
   flex-direction: column;
   max-width: 480px;
-  gap: 20px;
   display: flex;
   flex-direction: column;
   max-width: 480px;
@@ -25,9 +23,11 @@ main {
   text-align: justify;
   h2 {
     color: brown;
+    margin: 6px;
   }
-  p,
-  li {
+  p
+   {
     color: black;
+    margin: 6px;
   }
 }

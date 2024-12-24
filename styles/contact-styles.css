@@ -21,6 +21,7 @@ form {
   width: 100%;
   padding: 20px;
   align-self: center;
+  box-shadow: 2px 2px 6px black;
 }
 form label {
   padding: 2px 0;
@@ -56,4 +57,5 @@ form label {
   background-color: orange;
   padding: 6px 16px;
   color: #0d1017;
+  box-shadow: 2px 2px 6px black;
 }
